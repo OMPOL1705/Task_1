@@ -7,3 +7,17 @@ menuToggle.addEventListener('click', () => {
   // Toggle the 'open' class on the navigation menu
   nav.classList.toggle('open');
 });
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('main-header');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > 0) {
+    header.classList.add('scrolled');
+    header.classList.remove('transparent');
+  } else {
+    header.classList.add('transparent');
+    header.classList.remove('scrolled');
+  }
+});
+

@@ -8,14 +8,30 @@ body {
   background-color: #f8f8f8;
 }
 
-/* Header styles */
-header {
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust the height as needed */
+  transition: background-color 0.3s ease;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.scrolled {
+  background-color: black;
+}
+
+ header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333;
-  padding: 25px 10px;
+  padding: 10px 10px;
   z-index: 9999;
 }
 
@@ -28,7 +44,14 @@ header {
 .logo {
   color: #fff;
   font-size: 20px;
-  margin-left: 15px;
+  margin-right: 32vw;
+  margin-left: 3vh;
+
+}
+
+.logo img{
+  width: 158px;
+  height: 93px;
 }
 
 .menu-toggle {
@@ -65,16 +88,28 @@ nav ul li a:hover {
 /* Main content styles */
 main {
   padding: 20px;
+  margin-top: 4vh;
 }
 
 #hero-section {
   text-align: center;
 }
 
+.nice{
+  display: flex;
+    align-items: center;
+}
+
 #hero-section h1 {
   font-size: 32px;
   margin-bottom: 20px;
+ margin-top: 25vh;
   color: #fff;
+}
+
+#hero-section p{
+  color: white;
+  margin: 30px;
 }
 
 #hero-section img {
@@ -167,6 +202,39 @@ main {
   margin: 0;
 }
 
+#series-overview img{
+  width: 120vw;
+  height: 32vh;
+  border-radius: 10px;
+}
+
+.soros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 15vw;
+}
+
+
+
+.soros p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-left: 28px;
+}
+
+#hero-section {
+  background-image: url('https://source.unsplash.com/1500x800/?Newyork,skyline');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
 /* Footer styles */
 footer {
   background-color: #333;
@@ -185,7 +253,7 @@ footer {
   nav {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   nav.open {
