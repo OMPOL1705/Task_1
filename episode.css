@@ -21,6 +21,17 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+
+  .moro{
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+
+  .episode .moro p{
+    margin: 100px;
+    margin-left: 200px;
+  }
   
   .logo {
     color: #fff;
@@ -62,8 +73,9 @@ header {
   
   .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 10vh auto;
     padding: 20px;
+    
   }
   
   h1 {
@@ -79,8 +91,8 @@ header {
     margin-top: 0;
   }
   
-  p {
-    margin-top: 5px;
+  .moro p {
+    margin-top: 100px;
   }
   
   /* Episode player styles */
