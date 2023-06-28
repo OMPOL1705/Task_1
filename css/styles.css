@@ -224,9 +224,9 @@ main {
   padding: 25px;
   margin-left: 28px;
 }
-
+/* ../images/new-york-night-light-bay.jpg */
 #hero-section {
-  background-image: url('https://source.unsplash.com/1500x800/?Newyork,skyline');
+  background-image: url('../images/posts-on-body-of-water-newport-newport-wallpaper-preview.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
