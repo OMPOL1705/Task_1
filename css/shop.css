@@ -59,73 +59,53 @@ header {
     background-color: #555;
   }
   
-  h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-  }
 
-  h3{
+  #shop-items, #exclusive-items {
+    margin: 40px 0;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
     margin-bottom: 20px;
   }
   
-  .container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  section{
-    margin-top: 14vh;
-  }
-  
-  .add-blog-form {
-    background-color: #fff;
-    border-radius: 4px;
+  .item-card {
+    background-color: #f5f5f5;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 4px;
   }
   
-  .add-blog-form h2 {
+  .item-card img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
   }
   
-  .add-blog-form form {
-    display: grid;
-    gap: 10px;
+  .item-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   
-  .add-blog-form input,
-  .add-blog-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  .item-card p {
+    color: #666;
+    margin-bottom: 10px;
   }
   
-  .add-blog-form button {
-    padding: 10px 20px;
-    background-color: #ff5e5e;
+  .item-card button {
+    background-color: #333;
     color: #fff;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  .blog-post {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
+  .item-card button:hover {
+    background-color: #000;
   }
-  
-  .blog-post h2 {
-    margin-bottom: 10px;
-  }
-  
-  .blog-post p {
-    margin-bottom: 0;
-  }
-
   
 /* Footer styles */
 footer {
@@ -135,6 +115,9 @@ footer {
     text-align: center;
   }
   
+main{
+    margin: 15vh;
+}
   /* Media query for responsiveness */
   @media (max-width: 890px) {
     .menu-toggle {
