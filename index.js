@@ -30,7 +30,8 @@ const postButton = document.querySelector('#post-button');
 const chatButton = document.querySelector('#chat-button');
 
 // Hide the post form and chatbox initially
-postForm.style.display = 'none';
+postForm.style.display = 'block';
+postButton.style.backgroundColor = 'blue';
 chatbox.style.display = 'none';
 
 // Add click event listener to the post button
@@ -38,9 +39,9 @@ postButton.addEventListener('click', () => {
   // Toggle the visibility of the post form
   if (postForm.style.display === 'none') {
     postForm.style.display = 'block';
+    postButton.style.backgroundColor = 'blue';
+    chatButton.style.backgroundColor = 'black';
     chatbox.style.display = 'none';
-  } else {
-    postForm.style.display = 'none';
   }
 });
 
@@ -49,9 +50,9 @@ chatButton.addEventListener('click', () => {
   // Toggle the visibility of the chatbox
   if (chatbox.style.display === 'none') {
     chatbox.style.display = 'block';
+    postButton.style.backgroundColor = 'black';
+    chatButton.style.backgroundColor = 'blue';
     postForm.style.display = 'none';
-  } else {
-    chatbox.style.display = 'none';
   }
 });
 
