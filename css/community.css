@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 25px 10px;
+    z-index: 9999;
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .post-card {
+    width: calc(33.33% - 20px); /* Adjust the width as per your layout */
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-username {
+    font-weight: bold;
+  }
+  
+  .post-content {
+    margin-bottom: 10px;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .post-likes, .post-comments {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-likes::before, .post-comments::before {
+    content: "\f164"; /* Font Awesome thumbs-up icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  
+  .post-comments::before {
+    content: "\f0e6"; /* Font Awesome comment icon */
+  }
+
+  main {
+    padding: 20px;
+    margin-top: 6vh;
+  }
+  
+  .post-form {
+    margin-bottom: 20px;
+  }
+  
+  .post-form textarea {
+    width: 97%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  
+  .post-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .post-list {
+    margin-bottom: 20px;
+  }
+  
+  .post-list .post {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chatbox {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chatbox-messages {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message-user {
+    font-weight: bold;
+  }
+  
+  .chatbox-input {
+    margin-top: 20px;
+  }
+  
+  .chatbox-input input[type="text"] {
+    width: 80%;
+    padding: 10px;
+  }
+  
+  .chatbox-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 890px) {
+    .menu-toggle {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav.open {
+      display: flex;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    
+  }
+  
+  @media (max-width: 480px) {
+    .menu-toggle {
+      display: block;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding-right: 20px;
+    }
+  
+    .menu-toggle:focus {
+      outline: none;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    nav.open {
+      display: block;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .character-card{
+      margin: 20px 8vw;
+    }
+  }
+
+  
