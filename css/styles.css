@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Adjust the height as needed */
+  height: 85px; /* Adjust the height as needed */
   transition: background-color 0.3s ease;
 }
 
@@ -215,26 +215,6 @@ main {
   margin: auto 15vw;
 }
 
-
-
-.soros p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  margin-left: 28px;
-}
-/* ../images/new-york-night-light-bay.jpg */
-#hero-section {
-  background-image: url('../images/posts-on-body-of-water-newport-newport-wallpaper-preview.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  padding: 60px;
-  background-color: rgba(0, 0, 0, 0.5); 
-}
-
 /* Footer Styles */
 footer {
   background-color: #222;
@@ -266,6 +246,42 @@ footer {
 
 footer p {
   font-size: 14px;
+}
+
+.soros p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-left: 28px;
+}
+/* ../images/new-york-night-light-bay.jpg */
+#hero-section {
+  background-image: url('../images/posts-on-body-of-water-newport-newport-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.video-container{
+  margin-top: 70px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container video{
+  width: 60%;
+  max-width: 600px; /* Adjust this value to your desired maximum width */
+  margin: 0 auto; /* Center the video container horizontally */
+}
+
+/* Add some space between the video and the content above */
+#series-overview {
+  margin-bottom: 30px;
 }
 
 /* Media query for responsiveness */

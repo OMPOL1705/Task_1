@@ -90,14 +90,14 @@ footer {
   align-items: center;
 }
 
-.social-media a {
+.social-media1 a {
   color: #fff;
   font-size: 20px;
   margin-right: 10px;
   transition: color 0.3s ease;
 }
 
-.social-media a:hover {
+.social-media1 a:hover {
   color: #3b5998; /* Facebook Blue */
 }
 
