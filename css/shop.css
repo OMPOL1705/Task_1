@@ -59,6 +59,13 @@ header {
     background-color: #555;
   }
   
+  .centre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
   #shop-items, #exclusive-items {
     margin: 40px 0;
@@ -75,12 +82,18 @@ header {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
+    margin-right: 50px;
+    width: 15vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .item-card img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
   }
   
   .item-card h3 {
