@@ -79,11 +79,11 @@ header {
   
   .item-card {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding-bottom: 20px;
     margin-bottom: 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-right: 50px;
-    width: 15vw;
+    width: 23vw;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,9 @@ header {
   
   .item-card img {
     max-width: 100%;
-    height: auto;
+    height: 230px;
+    border-radius: 10px 10px 0px 0px;
+
   }
   
   .item-card h3 {
